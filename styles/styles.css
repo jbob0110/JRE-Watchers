@@ -1,0 +1,142 @@
+.grid-container {
+   display: grid;
+   width: 366.02px;
+   grid-template-rows: auto;
+   background-color: whitesmoke;
+   padding: 5px;
+   border-radius: 0px;
+   border: 1px solid #312D2A;
+   justify-items: stretch;
+}
+ 
+.rightNav {
+   grid-column: 3 / span 1;
+   grid-row: 2 / span 3;
+   padding: 10px;
+   width: auto;
+}
+ 
+.title {
+   grid-column: 1 / span 3;
+   grid-row: 1;
+   background-color: #312D2A;
+   padding: 10px;
+   border-radius: 10px;
+   color: whitesmoke;
+   text-align: center;
+   font-size: 28px;
+   font-family: serif ;
+}
+
+.optionsTitle {
+   background-color: #312D2A;
+   padding: 10px;
+   border-radius: 10px;
+   color: whitesmoke;
+   text-align: center;
+   font-size: 28px;
+   font-family: serif ;
+}
+
+.optionsContainer {
+   align-content: center;
+}
+.content {
+   grid-column: 1 / span 2;
+   grid-row: 2 / span 3;
+   padding: 1px;
+   width: auto;
+   align-items: center;
+   border-radius: 12px;
+   margin-bottom: 7px;
+}
+
+.content select {
+   width: 111px;
+}
+
+.tab {
+   max-height: 100%;
+   padding: 10px;
+}
+   
+/* Style the buttons inside the tab */
+.tab input{
+   display: block;
+   background-color: #312D2A;
+   color: white;
+   padding: 6px 6px;
+   width: 100%;
+   outline: 1px solid #312D2A;
+   text-align: center;
+   cursor: pointer;
+   transition: 0.1s;
+   align-items: center;
+   border-radius: 12px;
+   margin-bottom: 7px;
+}
+   
+/* Change background color of buttons on hover */
+.tab input:hover {
+   background-color: #C74634;
+}
+   
+/* Create an active/current "tab button" class */
+.tab input.active {
+   background-color: #C74634;
+   border: 3px solid #C74634;
+}
+   
+/* Style the tab content */
+.tabcontent {
+   padding: 0px 12px;
+   overflow:auto;
+   height: 525px;
+}
+
+/* loader content */
+.loader {
+   grid-column: 3 / span 1;
+   border: 13px solid #C74634;
+   border-top: 13px solid #312D2A;
+   border-radius: 50%;
+   width: 50px;
+   height: 50px;
+   animation: spin 2s linear infinite;
+   /* margin-left: 100px; */
+   /* margin-top: 45px; */
+   margin: auto;
+   display: none;
+}
+   
+@keyframes spin {
+   0% {transform: rotate(0deg);}
+   100% {transform: rotate(360deg);}
+}
+   
+#add {
+   margin-left: 20px;
+}
+
+ul {
+   list-style-type: none;
+   padding: 1px;
+   width:500px;
+   border:2px dimgray solid;  
+}
+
+ul li {
+   border: 1px solid #ddd;
+   margin-top: -1px;
+   background-color: #f6f6f6;
+   padding: 12px;
+   text-decoration: none;
+   color: black;
+   display: block;
+   position: relative;
+}
+
+.close {
+   float: right;
+   cursor: pointer;
+}

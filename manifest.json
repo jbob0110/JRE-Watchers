@@ -1,0 +1,28 @@
+{  
+   "name":"JRE Watchers",
+   "version":"0.0.1",
+   "description":"Adds watchers to JIRA tickets",
+   "permissions":[
+      "activeTab",
+      "tabs",
+      "storage",
+      "scripting"
+   ],
+   "host_permissions": [
+      "https://*/"
+    ],
+   "options_ui": {
+      "page": "options.html",
+      "open_in_tab": true,
+      "browser_style": true
+   },
+   "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+         "16":"icons/openEye_icon16.png",
+         "48":"icons/openEye_icon48.png",
+         "128":"icons/openEye_icon128.png"
+      }
+   },
+   "manifest_version":3
+}
